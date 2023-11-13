@@ -42,7 +42,7 @@ Bulls and Cows is a game where one player (or the computer) generates a secret 4
 
 1. _Clone the repository_:
 
-   - git clone https://github.com/JFujie/bulls-and-cows.git
+   - git clone git@github.com:JFujie/bulls-and-cows.git
 
 2. _Navigate to the project folder_:
 
