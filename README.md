@@ -91,3 +91,7 @@ Bulls and Cows is a game where one player (or the computer) generates a secret 4
 ## Dependencies
 
 - _readline-sync_
+
+## Acknowledgements
+
+I want to express my sincere gratitude to my father, whose unwavering support and inspiration played a pivotal role in this project. Understanding his unique thought process has been a journey in itself, and it has deepened my appreciation for his profound wisdom. His exceptional way of thinking serves as a constant source of inspiration, and I aspire to develop a similar level of capability. This project is a testament to the valuable lessons learned from his guidance and encouragement.
