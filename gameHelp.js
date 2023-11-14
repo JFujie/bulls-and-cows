@@ -1,6 +1,5 @@
 const readlineSync = require("readline-sync");
 
-//   ! ***************************************************************************************************************
 class CProgramHelp {
   sHelpText =
     "Welcome to the Game Manual!\n" +
@@ -14,15 +13,12 @@ class CProgramHelp {
     "If in different positions, they are counted as cows.\n\n" +
     "You have unlimited attempts. But if you feel like quitting just type `quit` into the console.";
 
-  //   ! ***************************************************************************************************************
   showHelp() {
     console.log(`\n${this.sHelpText}\n`);
     readlineSync.question("Press enter to continue...");
     console.log("\n");
   }
 }
-
-//   ! ***************************************************************************************************************
 
 module.exports = {
   CProgramHelp,

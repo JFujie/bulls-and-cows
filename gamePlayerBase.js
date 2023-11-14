@@ -24,8 +24,6 @@ class CPlayerBase {
     return ""; // means end the game
   }
 
-  //   ! ***************************************************************************************************************
-
   //method for receiving hint and messages and shows them on the console
   hint(iBulls, iCows, sMessage) {
     console.log("\nHint:");
@@ -33,14 +31,10 @@ class CPlayerBase {
     console.log(`${sMessage}\n`);
   }
 
-  //   ! ***************************************************************************************************************
-
   gameEnd(sSecretNumber, iAttempts, sMessage) {
     const result = `Secret number: ${sSecretNumber}, Attempts: ${iAttempts} - ${sMessage}`;
     this.results.push(result);
   }
-
-  //   ! ***************************************************************************************************************
 
   showStatistics() {
     const gamesPlayed = this.results.length;
@@ -51,8 +45,6 @@ class CPlayerBase {
     }
   }
 }
-
-//   ! ***************************************************************************************************************
 
 module.exports = {
   CPlayerBase,

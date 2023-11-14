@@ -3,8 +3,6 @@ This object displays the menu and reads the user input from the console
 */
 const readlineSync = require("readline-sync");
 
-//   ! ***************************************************************************************************************
-
 //enumeration values
 const menuValues = {
   playerGuessing: 1,
@@ -15,14 +13,10 @@ const menuValues = {
   quit: 6,
 };
 
-//   ! ***************************************************************************************************************
-
 class CProgramMenu {
   constructor(sPlayerName) {
     this.sPlayerName = sPlayerName;
   }
-
-  //   ! ***************************************************************************************************************
 
   displayMenu() {
     console.log(
@@ -35,8 +29,6 @@ class CProgramMenu {
     console.log("5. How to play");
     console.log("6. Close Application");
   }
-
-  //   ! ***************************************************************************************************************
 
   run() {
     let bInputOk = false;
@@ -64,8 +56,6 @@ class CProgramMenu {
     return iChoice;
   }
 }
-
-//   ! ***************************************************************************************************************
 
 module.exports = {
   menuValues,

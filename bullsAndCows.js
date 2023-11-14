@@ -12,8 +12,6 @@ const comPlayer = require("./comPlayer.js");
 const humanPlayer = require("./humanPlayer.js");
 const readlineSync = require("readline-sync");
 
-//   ! ***************************************************************************************************************
-
 //Program Object Section - creating instances of classes
 const sPlayerName = readlineSync.question("Please enter your name: "); // reading user name input
 const menu = new gameMenu.CProgramMenu(sPlayerName); // passing user name input to the CProgramMenu class
@@ -21,12 +19,8 @@ const help = new gameHelp.CProgramHelp();
 const theComPlayer = new comPlayer.CComPlayer();
 const theHumanPlayer = new humanPlayer.CHumanPlayer(sPlayerName); // passing user name input to the CHumanPlayer sub class
 
-//   ! ***************************************************************************************************************
-
 //Program Control Variable
 let bRun = true;
-
-//   ! ***************************************************************************************************************
 
 //main program loop
 while (bRun) {

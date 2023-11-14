@@ -13,8 +13,6 @@ class CTheGame {
     this.bAutoGenerateSecretNumber = bAutoGenerateSecretNumber;
   }
 
-  //   ! ***************************************************************************************************************
-
   generateUniqueRandomNumber() {
     const digits = Array.from({ length: 10 }, (_, i) => i); // makes Array of digits 0 to 9
     let randomNumber = "";
@@ -27,8 +25,6 @@ class CTheGame {
 
     return randomNumber;
   }
-
-  //   ! ***************************************************************************************************************
 
   // validates sGuess against sNumberToGuess, thus counting iBulls and iCows
   // sGuess is valid if iBulls = 4
@@ -67,8 +63,6 @@ class CTheGame {
     return { bKeepGuessing, iBulls, iCows, sMessage };
   }
 
-  //   ! ***************************************************************************************************************
-
   //2. every character must be a number between 0 - 9
   //3. every number must be unqiue within the input.
   isEachCharNumericAndUnique(sStr) {
@@ -92,8 +86,6 @@ class CTheGame {
     return true;
   }
 
-  //   ! ***************************************************************************************************************
-
   //ask guess from player and validate sGuess
   //1. must be 4 characters
   //2. every character must be a number between 0 - 9
@@ -115,8 +107,6 @@ class CTheGame {
     return sGuess;
   }
 
-  //   ! ***************************************************************************************************************
-
   getHumanSecretNumber() {
     let bKeepAsking = true;
     let humanSecretNumber;
@@ -133,7 +123,6 @@ class CTheGame {
     return humanSecretNumber;
   }
 
-  //   ! ***************************************************************************************************************
   //Runs the game loop
   run() {
     let bKeepGuessing = true; // Flag to control the game loop
@@ -161,8 +150,6 @@ class CTheGame {
     }
   }
 }
-
-//   ! ***************************************************************************************************************
 
 module.exports = {
   CTheGame,

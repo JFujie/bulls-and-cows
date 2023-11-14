@@ -1,7 +1,5 @@
 const { CPlayerBase } = require("./gamePlayerBase");
 
-//   ! ***************************************************************************************************************
-
 class CComPlayer extends CPlayerBase {
   // the ComPlayer has always the same name, therefore no parameter name is required.
   constructor() {
@@ -29,17 +27,13 @@ class CComPlayer extends CPlayerBase {
     return sGuess;
   }
 
-  //   ! ***************************************************************************************************************
-
-  gameEnd(sSecretNumber, iAttempts) {
+  gameEnd(sSecretNumber, iAttempts, sMessage) {
     // let base class do its work
-    super.gameEnd(sSecretNumber, iAttempts);
+    super.gameEnd(sSecretNumber, iAttempts, sMessage);
     // resetting iCurrAttempts so multiple games can be played
     this.iCurrAttempts = 0;
   }
 }
-
-//   ! ***************************************************************************************************************
 
 module.exports = {
   CComPlayer,
